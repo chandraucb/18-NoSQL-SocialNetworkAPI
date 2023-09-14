@@ -15,7 +15,9 @@ API for a social network web application where users can share their thoughts, r
 Clone the github repo as shown below, <br/><br/> ``` git clone git@github.com:chandraucb/18-NoSQL-SocialNetworkAPI.git ``` <br/><br/> Run node package install <br/><br/> ``` npm install ```
 
 ## Usage
-To run this application execute below command and follow the prompts <br/><br/> ```npm start ``` <br/> <br/>  
+To run this application execute below command and follow the prompts 
+
+```npm start ``` 
 ### End points
 **User**
     Get all users:        GET /api/users
@@ -38,7 +40,8 @@ To run this application execute below command and follow the prompts <br/><br/> 
 
 **Reaction**
     Add a reaction:       PUT /api/thoughts/:id/reactions
-    Delete a reaction:    DELETE /api/thoughts/:id/reactions <br/><br/> 
+    Delete a reaction:    DELETE /api/thoughts/:id/reactions 
+
 
 ![videodemo](../assets/images/video_demo.gif) 
 
