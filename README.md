@@ -20,28 +20,35 @@ To run this application execute below command and follow the prompts
 ```npm start ``` 
 ### End points
 **User**
-    Get all users:        GET /api/users
-    Create a user:        POST /api/users
-    Get user by ID:       GET /api/users/:id
-    Update a user:        PUT /api/users/:id
-    Delete a user:        DELETE /api/users/:id
+|API|HTTP Method|Route|
+|--|--|--|
+|Get Users|GET |/api/users|
+|Create a user|POST |/api/users|
+|Get a user|GET |/api/users/:id|
+|Update a user|PUT |/api/users/:id|
+|Delete a user|DELETE |/api/users/:id|
 
     
 **Friend**
-    Add a friend:         PUT /api/users/:userId/friends/:friendId
-    Delete a friend:      DELETE /api/users/:userId/friends/:friendId
+|API|HTTP Method|Route|
+|--|--|--|
+|Add a friend|PUT|/api/users/:userId/friends/:friendId|
+|Delete a friend|DELETE|/api/users/:userId/friends/:friendId|
 
 **Thought**
-    Get all thoughts:     GET /api/thoughts
-    Create a thought:     POST /api/thoughts
-    Get thought by ID:    GET /api/thoughts/:id
-    Update a thought:     PUT /api/thoughts/:id
-    Delete a thought:     DELETE /api/thoughts/:id
+|API|HTTP Method|Route|
+|--|--|--|
+|Get thoughts|GET|/api/thoughts|
+|Create a thought| POST|/api/thoughts|
+|Get a thought|GET|/api/thoughts/:id|
+|Update a thought|PUT|/api/thoughts/:id|
+|Delete a thought|DELETE|/api/thoughts/:id|
 
 **Reaction**
-    Add a reaction:       PUT /api/thoughts/:id/reactions
-    Delete a reaction:    DELETE /api/thoughts/:id/reactions 
-
+|API|HTTP Method|Route|
+|--|--|--|
+|Add a reaction|PUT|/api/thoughts/:id/reactions|
+|Delete a reaction|DELETE|/api/thoughts/:id/reactions|
 
 ![videodemo](../assets/images/video_demo.gif) 
 
@@ -55,7 +62,7 @@ Copyright (c) 2023 Chandrasekar Mohan
 Licensed under the MIT License
 
 ## Questions 
-  Name : Chandrasekar Mohan 
-  Git profile : https://github.com/chandraucb 
-  Reach me through email with additional questions
+Name : Chandrasekar Mohan 
+Git profile : https://github.com/chandraucb 
+Reach me through email with additional questions
 
