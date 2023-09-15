@@ -96,7 +96,7 @@ const userController = {
     // Delete a user
     deleteUser(req, res) {
         User.findOneAndDelete({ _id: req.params.id })
-            .populate({   //For bonus logic
+            .populate({   //For bonus logic to populate thoughts list with userData to remove associated thoughts
                 path: 'thoughts',
                 select: '-__v'
             })
@@ -105,17 +105,18 @@ const userController = {
                     res.status(404).json({ message: 'No User found with this id!'});
                     return;
                 } 
+                //Bonus logic for thoughts upon user delete
                 Thought.deleteMany({_id: {
                     $in: userData.thoughts
                 }}).then( thoughtData => {
                         console.log(thoughtData)
                         res.json(userData)
                     }      
-                )
+                ).catch(err => res.json(userData));
             })
             .catch(err => res.status(400).json(err));
     },
-
+    //user thoughts
     findUserThoughts(req,res) {
         User.findById({ _id: req.params.id })
         .populate({

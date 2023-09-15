@@ -12,12 +12,22 @@ API for a social network web application where users can share their thoughts, r
  - [License](#license)
 
 ## Installation
-Clone the github repo as shown below, <br/><br/> ``` git clone git@github.com:chandraucb/18-NoSQL-SocialNetworkAPI.git ``` <br/><br/> Run node package install <br/><br/> ``` npm install ```
+Clone the github repo as shown below, 
+
+``` git clone git@github.com:chandraucb/18-NoSQL-SocialNetworkAPI.git ```
+
+Run node package install
+
+``` npm install ```
 
 ## Usage
 To run this application execute below command and follow the prompts 
 
 ```npm start ``` 
+
+Demo video to show how to start the application,
+![videodemo](./assets/images/install_start_node.gif)
+
 ### End points
 **User**
 |API|HTTP Method|Route|
@@ -28,12 +38,17 @@ To run this application execute below command and follow the prompts
 |Update a user|PUT |/api/users/:id|
 |Delete a user|DELETE |/api/users/:id|
 
+Video demo to show how above routes respond,
+![videodemo](./assets/images/user_routes.gif)
     
 **Friend**
 |API|HTTP Method|Route|
 |--|--|--|
 |Add a friend|PUT|/api/users/:userId/friends/:friendId|
 |Delete a friend|DELETE|/api/users/:userId/friends/:friendId|
+
+Demo Video showing user routes for adding/deleting friends,
+![videodemo](./assets/images/add_delete_friend.gif) 
 
 **Thought**
 |API|HTTP Method|Route|
@@ -44,13 +59,21 @@ To run this application execute below command and follow the prompts
 |Update a thought|PUT|/api/thoughts/:id|
 |Delete a thought|DELETE|/api/thoughts/:id|
 
+Video demo to show how above thought routes respond,
+![videodemo](./assets/images/thought_routes.gif)
+
 **Reaction**
 |API|HTTP Method|Route|
 |--|--|--|
 |Add a reaction|PUT|/api/thoughts/:id/reactions|
 |Delete a reaction|DELETE|/api/thoughts/:id/reactions|
 
-![videodemo](../assets/images/video_demo.gif) 
+Video demo to show how above routes respond,
+![videodemo](./assets/images/add_delete_reaction.gif)
+
+Demo video for bonus delete user scenario,
+![videodemo](./assets/images/bonus.gif) 
+
 
 ## Credits
 
